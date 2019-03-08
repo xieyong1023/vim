@@ -1,0 +1,11 @@
+./configure --prefix=/Users/xieyong/usr \
+--exec-prefix=/Users/xieyong/usr \
+--enable-luainterp=yes \
+--enable-python3interp=yes \
+--enable-cscope \
+--enable-terminal \
+--enable-multibyte \
+--enable-gui=auto \
+--with-tlib=ncurses \
+--with-compiledby=xieyong \
+--enable-perlinterp \
