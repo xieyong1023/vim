@@ -9,3 +9,4 @@
 --with-tlib=ncurses \
 --with-compiledby=xieyong \
 --enable-perlinterp \
+--with-lua-prefix=`brew --prefix lua`
