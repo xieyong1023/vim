@@ -788,7 +788,7 @@ static struct fst
     {"prop_add",	3, 3, f_prop_add},
     {"prop_clear",	1, 3, f_prop_clear},
     {"prop_list",	1, 2, f_prop_list},
-    {"prop_remove",	2, 3, f_prop_remove},
+    {"prop_remove",	1, 3, f_prop_remove},
     {"prop_type_add",	2, 2, f_prop_type_add},
     {"prop_type_change", 2, 2, f_prop_type_change},
     {"prop_type_delete", 1, 2, f_prop_type_delete},
@@ -6414,7 +6414,7 @@ f_has(typval_T *argvars, typval_T *rettv)
 # ifdef FEAT_MOUSE_PTERM
 	"mouse_pterm",
 # endif
-# ifdef FEAT_MOUSE_SGR
+# ifdef FEAT_MOUSE_XTERM
 	"mouse_sgr",
 # endif
 # ifdef FEAT_SYSMOUSE
@@ -6532,9 +6532,6 @@ f_has(typval_T *argvars, typval_T *rettv)
 #endif
 #ifdef FEAT_TAG_OLDSTATIC
 	"tag_old_static",
-#endif
-#ifdef FEAT_TAG_ANYWHITE
-	"tag_any_white",
 #endif
 #ifdef FEAT_TCL
 # ifndef DYNAMIC_TCL
