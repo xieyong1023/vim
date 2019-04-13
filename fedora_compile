@@ -1,0 +1,21 @@
+
+#!/bin/sh
+
+PREFIX=/usr/local/vim
+
+./configure \
+--prefix=$PREFIX \
+--disable-selinux \
+--with-tlib=ncurses \
+--enable-terminal \
+--enable-luainterp=yes \
+--enable-mzschemeinterp=yes \
+--enable-python3interp=yes \
+--enable-tclinterp=yes \
+--enable-cscope \
+--enable-multibyte \
+--enable-xim \
+--enable-fontset \
+--enable-gui=gtk3 \
+--enable-perlinterp=dynamic \
+--enable-rubyinterp=yes \
